@@ -1,6 +1,25 @@
-# Gatsby - Golang - Docker MVP
+# New Document# Gatsby - Golang - Docker MVP
 
-This is a proof of concept MVP (_minimum viable product_) of how a fullstack containerized app would run and with being managed by Docker Compose.
+This is a proof of concept MVP (_minimum viable product_) of how a golang-gatsby containerized app would run and with being managed by Docker Compose.
+
+### Structure
+
+```
+├── docker-compose.yml
+├── gatsby
+│   ├── Dockerfile
+│   ├── src
+│   ├── ...
+└── golang
+    ├── Dockerfile
+    ├── Makefile
+    ├── src
+    └── ...
+```
+
+Each folder contains an **src** being the main folder and a **Dockerfile** for building the container for that certain app.<br/>
+Each Dockerfile will then be called by the **docker-compose.yml** to spin up and be orchestrated.<br/>
+The **Makefile** can be called on development to automate the process of compiling and generating Go compiled binaries.
 
 ### Architecture
 
@@ -23,3 +42,5 @@ There are several concepts that I've shown with this application, those are:
 
 1. `Git clone`
 2. `docker-compose up -d`
+
+---

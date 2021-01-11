@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  gatsby:
+    build: ./gatsby
+    volumes:
+      - ./gatsby:/usr/src/gatsby
+    ports:
+      - 80:80
+  golang:
+    build: ./golang
+    volumes:
+      - ./golang:/usr/src/golang
+    ports:
+      - 8080:8080

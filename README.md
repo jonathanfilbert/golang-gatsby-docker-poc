@@ -1,4 +1,4 @@
-# New Document# Gatsby - Golang - Docker MVP
+Gatsby - Golang - Docker MVP
 
 This is a proof of concept MVP (_minimum viable product_) of how a golang-gatsby containerized app would run and with being managed by Docker Compose.
 
